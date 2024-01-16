@@ -1,0 +1,10 @@
+header {
+    padding-top: 50px;
+    display: flex;
+}
+
+.logo {
+    height: 130px;
+    width: auto;
+    margin: auto auto;
+}
