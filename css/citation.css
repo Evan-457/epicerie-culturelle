@@ -1,0 +1,32 @@
+.quote {
+    width: 100%;
+    height: 500px;
+    background: black;
+}
+
+.quote .wrapL {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.quote-left {
+    text-align: center;
+    color: white;
+}
+
+.quote-right img {
+    width: 500px;
+    height: 100%;
+}
+
+.quote-text {
+    font-family: "DINPro";
+    font-size: 32px;
+    font-weight: 300;
+}
+.quote-name {
+    font-family: "DINPro-Medium";
+    font-size: 20px;
+    font-weight: 400;
+}

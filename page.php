@@ -17,8 +17,6 @@ foreach ($flexible_contents as $content) {
 
 }
 
-$text = get_field('text', $template_file);
-
 ?>
 
 <?php get_footer() ?>

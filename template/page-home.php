@@ -8,15 +8,6 @@
 
 <p class="index-descrition">citation</p>
 
-<div class="quote">
-    <img class="quote-illustration" src="" alt="">
-    <div class="img-filter">
-        <img class="double-poivron" src="wp-content/img/double-poivron.svg" alt="pictogramme avec les deux poivrons">
-        <p class="quote-text">Citation</p>
-        <p class="quote-name">nom</p>
-    </div>
-</div>
-
 <div class="news">
     <div class="title-part">
         <img src="wp-content/img/poivron.svg" alt="pictogramme d'un poivron">
@@ -26,19 +17,7 @@
 
     <div class="wrap">
         <div class="align-bloc">
-            <div class="small-bloc">
-                <img src="" alt="">
-                <div class="small-bloc-content">
-                    <div class="small-bloc-content-line1">
-                        <h6>nom artiste</h6>
-                        <p>00/00/0000</p>
-                    </div>
-                    <p>description</p>
-                    <a href="">
-                        <img src="" alt="En savoir plus">
-                    </a>
-                </div>
-            </div>
+            
             <div class="small-bloc">
                 <img src="" alt="">
                 <div class="small-bloc-content">
