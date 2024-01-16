@@ -1,0 +1,29 @@
+.big-bloc {
+    width: 600px;
+    height: 600px;
+    display: flex;
+    padding: 25px;
+    justify-content: center;
+    align-items: center;
+    background: #E5F3F6;
+
+}
+.big-bloc-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 35px;
+}
+.big-bloc-cat {
+    font-family: "DINPro-Medium";
+    font-size: 20px;
+}
+.big-bloc-title {
+    font-family: "DINPro-Medium";
+    font-size: 100px;    
+}
+.big-bloc-desc {
+    font-family: "DINPro";
+    font-size: 17px;
+}

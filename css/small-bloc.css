@@ -1,5 +1,5 @@
 .small-bloc {
-    width: auto;
+    width: 432px;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -7,21 +7,24 @@
     padding-bottom: 70px;
 }
 .small-bloc img {
-    width: 432px;
+    width: auto;
     height: 432px;
 }
 .small-bloc-content {
-    width: 100%;
+    width: auto;
     display: flex;
     flex-direction: column;
     gap: 16px;
+    font-family: "DINPro";
+    font-size: 17px;
 }
 .small-bloc-content-line1 {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.small-bloc-content-line1 h6 {
+.small-bloc-content-line1 h4 {
     font-family: "DINPro-Medium";
     font-size: 24px;
 }

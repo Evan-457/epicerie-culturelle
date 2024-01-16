@@ -32,3 +32,8 @@
     font-family: "DINPro-Light";
     src: url('../../../font/din/DINPro-Light.ttf');
 }
+
+@font-face {
+    font-family: "DINPro-CondensedLight";
+    src: url('../../../font/din/DINPro-CondensedLight.ttf');
+}

@@ -4,6 +4,7 @@
     add_image_size('cover_house', 400,400,['center','center']);
     add_image_size('quote', 500,500,['center','center']);
     add_image_size('small-bloc', 432,432,['center','center']);
+    add_image_size('img-desc', 415,415,['center','center']);
 
     //supprimer margin-top 32px
     function remove_admin_login_header() {
@@ -27,6 +28,9 @@
         //layouts
         wp_enqueue_style('citation', get_template_directory_uri().'/css/citation.css');
         wp_enqueue_style('small-bloc', get_template_directory_uri().'/css/small-bloc.css');
+        wp_enqueue_style('big-bloc', get_template_directory_uri().'/css/big-bloc.css');
+        wp_enqueue_style('plus-button', get_template_directory_uri().'/css/plus-button.css');
+        wp_enqueue_style('img-desc', get_template_directory_uri().'/css/img-desc.css');
         //footer
         wp_enqueue_style('footer', get_template_directory_uri().'/css/footer.css');
         //js
