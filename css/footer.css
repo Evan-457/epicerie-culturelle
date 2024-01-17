@@ -10,10 +10,27 @@
 .footer-color {
     width: 100%;
     height: auto;
-    background: #F8E0E0;
+    background: #659899;
     font-family: "DINPro";
     font-size: 17px;
+    position: relative;
 }
+.footer-color::after {
+    content: "";
+    background-image: url(../img/poivron.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 501px;
+    height: 595px;
+    position: absolute;
+    left: 54%;
+    top: -163%;
+    transform: rotate(35deg);
+    fill: #659899;
+    opacity: 17%;
+    z-index: -1;
+}
+
 .footer-align {
     max-width: 1104px;
     margin: auto auto;
@@ -28,9 +45,7 @@
 }
 .footer-left {
     text-align: left;
-}
-.footer-left img {
-    width: 100px;
+    width: 200px;
 }
 .footer-center {
     text-align: center;

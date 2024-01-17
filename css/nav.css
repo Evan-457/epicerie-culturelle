@@ -8,12 +8,32 @@
     right: -100%;
     background-color: #e8e8e8;
     transition: right 0.5s ease;
+
+    display: flex;
+    align-items: center;
 }
-  
-.sidenav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+
+.nav-align {
+    padding-left: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 90px;
+}  
+.nav-entry {
+    display: flex;
+    flex-direction: column;
+    align-items: normal;
+    gap: 30px;
+    font-family: "DINPro-CondensedMedium";
+    font-size: 36px;
+}
+.nav-entry a {
+    text-decoration: none;
+    color: black;
+}
+.nav-social {
+    display: flex;
+    gap: 30px;
 }
   
 /* Active class */

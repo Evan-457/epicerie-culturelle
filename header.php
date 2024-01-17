@@ -11,7 +11,7 @@
 <body>
 
     <header>
-        <img class="logo" src="wp-content/img/logo-b.svg" alt="logo de l'épicerie culturelle">
+        <img class="logo" src="<?php echo(get_template_directory_uri()) ?>/img/logo-b.svg" alt="logo de l'épicerie culturelle">
     </header>
 
     <?php 

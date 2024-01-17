@@ -1,26 +1,25 @@
 <footer>
     <div class="footer-logo">
-        <img class="logo" src="" alt="logo de l'épicerie culturelle">
+        <img class="logo" src="<?php echo(get_template_directory_uri()) ?>/img/logo-b.svg" alt="logo de l'épicerie culturelle">
         <p>description</p>
     </div>
 
     <div class="footer-color">
         <div class="footer-align">
             <div class="footer-left">
-                <p class="footer-title">en collab</p>
-                <img src="wp-content/img/logo-rgl.png" alt="logo de Radio Grand Lac">
+                <p>L’art et la culture en Pays de Savoie</p>
             </div>
             <div class="footer-center">
                 <p class="footer-title">Nos réseaux sociaux</p>
                 <div class="footer-social">
                     <a href="">
-                        <img src="wp-content/img/logo-instagram.svg" alt="logo d'instagram">
+                        <img class="logo-social" src="<?php echo(get_template_directory_uri()) ?>/img/logo-instagram.svg" alt="logo d'instagram">
                     </a>
                     <a href="">
-                        <img src="wp-content/img/logo-facebook.svg" alt="logo de facebook">
+                        <img class="logo-social" src="<?php echo(get_template_directory_uri()) ?>/img/logo-facebook.svg" alt="logo de facebook">
                     </a>
                     <a href="">
-                        <img src="wp-content/img/logo-youtube.svg" alt="logo de YouTube">
+                        <img class="logo-social" src="<?php echo(get_template_directory_uri()) ?>/img/logo-youtube.svg" alt="logo de YouTube">
                     </a>
                 </div>
             </div>
