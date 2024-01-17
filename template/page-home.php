@@ -9,11 +9,6 @@
 <p class="index-descrition">citation</p>
 
 <div class="news">
-    <div class="title-part">
-        <img src="wp-content/img/poivron.svg" alt="pictogramme d'un poivron">
-        <h2>Title2</h2>
-        <img src="wp-content/img/poivron.svg" alt="pictogramme d'un poivron">
-    </div>
 
     <div class="wrap">
         <div class="align-bloc">

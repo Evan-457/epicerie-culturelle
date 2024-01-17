@@ -31,6 +31,9 @@
         wp_enqueue_style('big-bloc', get_template_directory_uri().'/css/big-bloc.css');
         wp_enqueue_style('plus-button', get_template_directory_uri().'/css/plus-button.css');
         wp_enqueue_style('img-desc', get_template_directory_uri().'/css/img-desc.css');
+        wp_enqueue_style('title-poivron', get_template_directory_uri().'/css/title-poivron.css');
+        wp_enqueue_style('title-outline', get_template_directory_uri().'/css/title-outline.css');
+        
         //footer
         wp_enqueue_style('footer', get_template_directory_uri().'/css/footer.css');
         //js

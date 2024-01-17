@@ -1,0 +1,15 @@
+.title-poivron {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 180px 0 80px 0;
+    gap: 100px;
+}
+.title-poivron-title {
+    font-family: "DINPro-CondensedMedium";
+    font-size: 240px;
+}
+.title-poivron-img {
+    height: 100px;
+    width: auto;
+}

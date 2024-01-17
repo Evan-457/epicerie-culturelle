@@ -1,0 +1,9 @@
+.title-outline {
+    width: 100%;
+    text-align: center;
+    font-family: "DINPro-CondensedMedium";
+    font-size: 120px;
+    -webkit-text-stroke: 1px black;
+    color: #ffffff00;
+    text-transform: uppercase;
+}

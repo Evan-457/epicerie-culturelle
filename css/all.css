@@ -15,27 +15,6 @@
 }
 
 /*title*/
-.title-part {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 180px 0 80px 0;
-    gap: 100px;
-}
-.title-part h2 {
-    font-family: "DINPro-CondensedMedium";
-    font-size: 240px;
-}
-.title-part img {
-    height: 100px;
-    width: auto;
-}
-
-.center-element{
-    width: 100%;
-    height: auto;
-    text-align: center
-}
 
 /*button*/
 .see-more {
