@@ -1,0 +1,13 @@
+.content-line1 {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.content-line2 {
+    width: 100%;
+    padding: 30px 0 130px 0;
+}
+.content-line1, .content-line2 {
+    font-family: "DINPro";
+    font-size: 17px;
+}

@@ -8,7 +8,7 @@
 
 <p class="index-descrition">citation</p>
 
-<div class="news">
+<div class="news"> ?
 
     <div class="wrap">
         <div class="align-bloc">

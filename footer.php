@@ -1,7 +1,6 @@
 <footer>
     <div class="footer-logo">
         <img class="logo" src="<?php echo(get_template_directory_uri()) ?>/img/logo-b.svg" alt="logo de l'épicerie culturelle">
-        <p>description</p>
     </div>
 
     <div class="footer-color">
