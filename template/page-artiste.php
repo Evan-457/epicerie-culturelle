@@ -4,7 +4,7 @@
   get_header();
 
   //var
-  $title = get_field('title');
+  $title = get_the_title();
 
   $categories = get_field('cat');
   //d($categories);
@@ -28,7 +28,6 @@
                 'link' => get_post_type_archive_link($post_type->name),
             ];
 
-            d(get_post_type_archive_link('peintre'));
             get_template_part('layouts/big','bloc', $content);
         }
         d($cat['link']);

@@ -1,21 +1,628 @@
-@import 'reset.scss';
-@import 'style.scss';
-@import 'font.scss';
-@import 'all.scss';
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
 
-@import 'header.scss';
-@import 'nav.scss';
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
 
-@import 'page-home.scss';
-@import 'page-contact.scss';
-@import 'page-content.scss';
+body {
+  line-height: 1;
+}
 
-@import 'citation.scss';
-@import 'small-bloc.scss';
-@import 'big-bloc.scss';
-@import 'plus-button.scss';
-@import 'img-desc.scss';
-@import 'title-poivron.scss';
-@import 'title-outline.scss';
+ol, ul {
+  list-style: none;
+}
 
-@import 'footer.scss';
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: "DINPro-CondensedMedium";
+  src: url("../font/din/DINPro-CondensedMedium.ttf");
+}
+@font-face {
+  font-family: "DINPro";
+  src: url("../font/din/DINPro.ttf");
+}
+@font-face {
+  font-family: "DINPro-Medium";
+  src: url("../font/din/DINPro-Medium.ttf");
+}
+@font-face {
+  font-family: "DINPro-CondensedMediumItalic";
+  src: url("../font/din/DINPro-CondensedMediumItalic.ttf");
+}
+@font-face {
+  font-family: "DINPro-Condensed";
+  src: url("../font/din/DINPro-CondensedRegular.ttf");
+}
+@font-face {
+  font-family: "DINPro-CondensedBold";
+  src: url("../font/din/DINPro-CondensedBold.ttf");
+}
+@font-face {
+  font-family: "DINPro-Light";
+  src: url("../font/din/DINPro-Light.ttf");
+}
+@font-face {
+  font-family: "DINPro-CondensedLight";
+  src: url("../font/din/DINPro-CondensedLight.ttf");
+}
+/*all*/
+.wrapXL {
+  max-width: 1328px;
+  margin: auto auto;
+}
+
+.wrapL {
+  max-width: 1104px;
+  margin: auto auto;
+}
+
+.center-items {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.double-poivron {
+  height: 48px;
+  padding: 60px 0;
+}
+
+/*grid bloc*/
+.grid-small-bloc {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 16px;
+  grid-row-gap: 30px;
+}
+
+.grid-big-bloc {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 16px;
+  grid-row-gap: 30px;
+}
+
+/*button*/
+.see-more {
+  font-family: "DINPro-CondensedMedium";
+  font-size: 24px;
+  padding: 10px 12px;
+  background: rgba(215, 178, 29, 0.3254901961);
+  text-decoration: none;
+  color: black;
+  text-align: center;
+}
+
+/*bloc*/
+.align-bloc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+}
+
+.logo-social {
+  width: 25px;
+  height: auto;
+}
+
+header {
+  padding-top: 50px;
+  display: flex;
+}
+
+.logo {
+  height: 130px;
+  width: auto;
+  margin: auto auto;
+}
+
+/* Sidenav menu */
+.sidenav {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: -100%;
+  background-color: #e8e8e8;
+  transition: right 0.5s ease;
+  display: flex;
+  align-items: center;
+}
+
+.nav-align {
+  padding-left: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 90px;
+}
+
+.menu-nav-container {
+  font-family: "DINPro-CondensedMedium";
+  letter-spacing: -6%;
+  text-transform: uppercase;
+  font-size: 36px;
+}
+
+.menu-nav-container li {
+  padding: 15px 0;
+}
+
+.menu-nav-container a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Active class */
+.sidenav.active {
+  right: 0;
+}
+
+/* Close btn */
+.sidenav .close {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+}
+
+/*open*/
+.openBtn-position {
+  position: fixed;
+  top: 100px;
+  right: 50px;
+}
+
+.openBtn {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: "DINPro-CondensedMedium";
+  font-size: 20px;
+  color: black;
+  text-decoration: none;
+}
+
+.openBtn span {
+  display: block;
+  width: 30px;
+  height: 2px;
+  background-color: black;
+  margin: 6px 0;
+}
+
+/*close*/
+.closeBtn {
+  position: absolute;
+  top: 90px;
+  right: 50px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  font-family: "DINPro-CondensedMedium";
+  font-size: 20px;
+  color: black;
+  text-decoration: none;
+}
+
+.cross {
+  font-family: "DINPro-Light";
+  font-size: 40px;
+  padding-bottom: 10px;
+}
+
+.home-slogan {
+  font-family: "DINPro-CondensedMedium";
+  font-size: 170PX;
+  text-align: center;
+  padding: 130px 0;
+  text-transform: uppercase;
+}
+
+form {
+  margin: auto auto;
+  width: 40%;
+  padding-top: 100px;
+}
+
+label {
+  font-family: "DINPro-CondensedMedium";
+  font-size: 24px;
+}
+
+input[type=text] {
+  margin: 5px 0 20px 0;
+  padding: 10px;
+  border: 1px solid black;
+  width: 100%;
+  font-family: "DINPro-Light";
+  font-size: 16px;
+}
+
+textarea {
+  margin: 5px 0 20px 0;
+  padding: 10px;
+  border: 1px solid black;
+  min-width: 100%;
+  max-width: 100%;
+  font-family: "DINPro-Light";
+  font-size: 16px;
+}
+
+.form-submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  font-family: "DINPro-Condensed";
+  font-size: 24px;
+  color: white;
+  padding: 10px 15px;
+  border: 1px solid black;
+  background: black;
+}
+
+.form-submit img {
+  width: 30px;
+  height: auto;
+  filter: invert(1);
+}
+
+.form-submit:hover {
+  background-color: rgba(255, 255, 255, 0);
+  color: black;
+}
+
+.form-submit:hover img {
+  filter: none;
+}
+
+.content-line1 {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.content-line2 {
+  width: 100%;
+  padding: 30px 0 130px 0;
+}
+
+.content-line1, .content-line2 {
+  font-family: "DINPro";
+  font-size: 17px;
+}
+
+.quote {
+  width: 100%;
+  height: 500px;
+  background: black;
+}
+
+.quote .wrapL {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 100px;
+}
+
+.quote-left {
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+
+.quote-right img {
+  width: 500px;
+  height: 100%;
+}
+
+.quote-text {
+  font-family: "DINPro";
+  font-size: 32px;
+  font-weight: 300;
+}
+
+.quote-name {
+  font-family: "DINPro-Medium";
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.small-bloc {
+  width: 432px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding-bottom: 70px;
+}
+
+.small-bloc img {
+  width: auto;
+  height: 432px;
+}
+
+.small-bloc-content {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  font-family: "DINPro";
+  font-size: 17px;
+}
+
+.small-bloc-content-line1 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.small-bloc-content-line1-name {
+  font-family: "DINPro-Medium";
+  font-size: 24px;
+}
+
+.small-bloc-content-line1-date {
+  font-family: "DINPro-CondensedMediumItalic";
+  font-size: 24px;
+}
+
+.big-bloc {
+  width: 600px;
+  height: 600px;
+  display: flex;
+  padding: 25px;
+  justify-content: center;
+  align-items: center;
+  background: #E5F3F6;
+}
+
+.big-bloc-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 35px;
+}
+
+.big-bloc-cat {
+  font-family: "DINPro-CondensedMedium";
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.big-bloc-title {
+  font-family: "DINPro-CondensedMedium";
+  font-size: 100px;
+  text-transform: uppercase;
+}
+
+.big-bloc-desc {
+  font-family: "DINPro";
+  font-size: 17px;
+}
+
+.plus-button {
+  width: fit-content;
+  height: auto;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  transition: all 0.5s ease;
+  text-decoration: none;
+  font-family: "DINPro-CondensedLight";
+  font-size: 20px;
+  transition: all 0.5s ease;
+}
+
+.plus-button img {
+  padding: 8px;
+  width: 24px;
+  height: 24px;
+  transition: all 0.5s ease;
+}
+
+.plus-button p {
+  width: auto;
+  padding: 0 8px;
+  display: none;
+}
+
+.plus-button:hover {
+  background: black;
+  width: fit-content;
+  padding-right: 8px;
+}
+
+.plus-button:hover img {
+  transform: rotate(90deg);
+  filter: invert(1);
+}
+
+.plus-button:hover p {
+  display: contents;
+  color: white;
+}
+
+.img-desc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.img-desc-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: black;
+  width: 415px;
+  height: auto;
+  padding: 65px;
+}
+
+.img-desc-img img {
+  width: 100%;
+}
+
+.img-desc-title {
+  font-family: "DINPro-Medium";
+  font-size: 24px;
+  padding-bottom: 16px;
+}
+
+.img-desc-text {
+  font-family: "DINPro";
+  font-size: 17px;
+}
+
+.desc-only-content {
+  text-align: center;
+}
+
+.title-poivron {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 0;
+  gap: 100px;
+}
+
+.title-poivron-title {
+  font-family: "DINPro-CondensedMedium";
+  font-size: 240px;
+}
+
+.title-poivron-img {
+  height: 100px;
+  width: auto;
+}
+
+.title-outline {
+  width: 100%;
+  text-align: center;
+  font-family: "DINPro-CondensedMedium";
+  font-size: 120px;
+  -webkit-text-stroke: 1px black;
+  color: rgba(255, 255, 255, 0);
+  text-transform: uppercase;
+}
+
+.footer-logo {
+  padding: 230px 75px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footer-color {
+  width: 100%;
+  height: auto;
+  background: #659899;
+  font-family: "DINPro";
+  font-size: 17px;
+  position: relative;
+}
+
+.footer-color::after {
+  content: "";
+  background-image: url(../img/poivron.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 501px;
+  height: 595px;
+  position: absolute;
+  left: 54%;
+  top: -163%;
+  transform: rotate(35deg);
+  fill: #659899;
+  opacity: 17%;
+  z-index: -1;
+}
+
+.footer-align {
+  max-width: 1104px;
+  margin: auto auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 0 90px 0;
+}
+
+.footer-title {
+  font-family: "DINPro-CondensedBold";
+  font-size: 20px;
+  padding-bottom: 30px;
+}
+
+.footer-left {
+  text-align: left;
+  width: 200px;
+}
+
+.footer-center {
+  text-align: center;
+}
+
+.footer-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.footer-right {
+  text-align: right;
+}
+
+.footer-right div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/*# sourceMappingURL=style.css.map */

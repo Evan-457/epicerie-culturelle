@@ -28,7 +28,7 @@
 }
 .plus-button:hover img{
     transform: rotate(90deg);
-    filter: invert();
+    filter: invert(1);
 }
 .plus-button:hover p {
     display: contents;

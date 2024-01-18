@@ -46,7 +46,7 @@ textarea {
 .form-submit img {
     width: 30px;
     height: auto;
-    filter: invert();
+    filter: invert(1);
 }
 
 .form-submit:hover {

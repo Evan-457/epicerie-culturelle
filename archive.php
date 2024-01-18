@@ -4,7 +4,7 @@
     get_header();
 
     //var
-    $title = get_field('title');
+    $title = get_the_title();
 ?>
 
 <div class="title-poivron">

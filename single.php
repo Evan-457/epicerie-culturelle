@@ -4,7 +4,7 @@
     get_header();
 
     //var
-    $title = get_the_title();
+    $title = get_field('Title');
     $img = get_field('img');
     $text1 = get_field('text1');
     $text2 = get_field('text2');
