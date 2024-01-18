@@ -8,9 +8,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 100px;
 }
 
 .quote-left {
+    width: 100%;
     text-align: center;
     color: white;
 }

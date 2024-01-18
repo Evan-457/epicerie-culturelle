@@ -16,12 +16,14 @@
     gap: 35px;
 }
 .big-bloc-cat {
-    font-family: "DINPro-Medium";
+    font-family: "DINPro-CondensedMedium";
     font-size: 20px;
+    text-transform: uppercase;
 }
 .big-bloc-title {
-    font-family: "DINPro-Medium";
-    font-size: 100px;    
+    font-family: "DINPro-CondensedMedium";
+    font-size: 100px;   
+    text-transform: uppercase; 
 }
 .big-bloc-desc {
     font-family: "DINPro";

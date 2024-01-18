@@ -24,11 +24,11 @@
     justify-content: space-between;
     align-items: center;
 }
-.small-bloc-content-line1 h4 {
+.small-bloc-content-line1-name {
     font-family: "DINPro-Medium";
     font-size: 24px;
 }
-.small-bloc-content-line1 p {
+.small-bloc-content-line1-date {
     font-family: "DINPro-CondensedMediumItalic";
     font-size: 24px;
 }

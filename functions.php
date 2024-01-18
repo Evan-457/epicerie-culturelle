@@ -25,7 +25,7 @@
         wp_enqueue_style('header', get_template_directory_uri().'/css/header.css');
         wp_enqueue_style('nav', get_template_directory_uri().'/css/nav.css');
         //pages
-        wp_enqueue_style('page-contact', get_template_directory_uri().'/css/page-home.css');
+        wp_enqueue_style('page-home', get_template_directory_uri().'/css/page-home.css');
         wp_enqueue_style('page-contact', get_template_directory_uri().'/css/page-contact.css');
         wp_enqueue_style('page-content', get_template_directory_uri().'/css/page-content.css');
         //layouts

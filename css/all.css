@@ -9,15 +9,28 @@
     margin: auto auto;
 }
 
-.double-poivron {
-    height: 48px;
-    width: auto;
+.center-items {
+    width: 100%;
+    display: flex;
+    justify-content: center;   
+    align-items: center;
 }
 
-/*grid small bloc*/
+.double-poivron {
+    height: 48px;
+    padding: 60px 0;
+}
+
+/*grid bloc*/
 .grid-small-bloc {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 16px;
+    grid-row-gap: 30px;
+}
+.grid-big-bloc {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 16px;
     grid-row-gap: 30px;
 }
@@ -31,7 +44,6 @@
     text-decoration: none;
     color: black;
     text-align: center;
-    margin: auto auto;
 }
 
 /*bloc*/
@@ -45,13 +57,4 @@
 .logo-social {
     width: 25px;
     height: auto;
-}
-
-/*nav-links*/
-.nav-links {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    font-family: "DINPro";
-    font-size: 24px;
 }

@@ -19,23 +19,19 @@
     flex-direction: column;
     gap: 90px;
 }  
-.nav-entry {
-    display: flex;
-    flex-direction: column;
-    align-items: normal;
-    gap: 30px;
+.menu-nav-container {
     font-family: "DINPro-CondensedMedium";
+    letter-spacing: -6%;
+    text-transform: uppercase;
     font-size: 36px;
 }
-.nav-entry a {
+.menu-nav-container li {
+    padding: 15px 0;
+}
+.menu-nav-container a {
     text-decoration: none;
     color: black;
 }
-.nav-social {
-    display: flex;
-    gap: 30px;
-}
-  
 /* Active class */
 .sidenav.active {
     right: 0;

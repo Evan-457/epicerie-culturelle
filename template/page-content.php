@@ -4,14 +4,14 @@
     get_header();
 
     //var
-    $title = get_field('title');
+    $title = get_the_title();
     $img = get_field('img');
     $text1 = get_field('text1');
     $text2 = get_field('text2');
-    $flexible_contents = get_field('content');
+    $works = get_field('works');
 ?>
 
-<div class="title-poivron">
+<div class="wrapXL title-poivron">
     <h2 class="title-poivron-title"> <?php echo($title) ?> </h2>
     <img class="title-poivron-img" src="<?php echo(get_template_directory_uri()) ?>/img/double-poivron.svg" alt="pictogramme d'un poivron">
 </div>
@@ -27,22 +27,22 @@
         <?php echo($text2) ?>
     </p>
 </div>
-
-<div class=" wrapXL grid-small-bloc">
-    <?php
-        //import layouts
-        foreach ($flexible_contents as $content) {
-            $template_name = $content['acf_fc_layout'];
-            $template_file = sprintf('%s/layouts/%s.php', get_template_directory(), $template_name);
-        
-            if (file_exists($template_file)) {  
-                printf('<section class="layout_%s">', $template_name);
-                include($template_file);
-                printf('</section>');
+<?php if(isset($works)): ?>
+    <div class=" wrapXL grid-small-bloc">
+        <?php
+            //import layouts
+            foreach ($works as $work) {
+                $content = [
+                    'img' => $work['img'],
+                    'name' => $work['name'],
+                    'text' => $work['text'],
+                    'activate' => false,
+                ];
+                get_template_part('layouts/small','bloc', $content);
             }
-        }
-    ?>
-</div>
+        ?>
+    </div>
+<?php endif ?>
 
 
 <?php
