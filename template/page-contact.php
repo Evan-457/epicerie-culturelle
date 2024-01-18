@@ -3,6 +3,8 @@
 
     get_header();
 
+    $title = get_the_title();
+
     if (isset($_POST['submit']) && $_POST['firstname'] !== '') {
         var_dump($_POST);
         //$to = ;
@@ -13,13 +15,10 @@
     }
 ?>
 
-<div class="title-part">
-    <img src="../wp-content/img/poivron.svg" alt="pictogramme d'un poivron">
-    <h2>Title2</h2>
-    <img src="../wp-content/img/poivron.svg" alt="pictogramme d'un poivron">
+<div class="title-poivron">
+    <h2 class="title-poivron-title"> <?php echo($title) ?> </h2>
+    <img class="title-poivron-img" src="<?php echo(get_template_directory_uri()) ?>/img/double-poivron.svg" alt="pictogramme d'un poivron">
 </div>
-
-<h3>1 projet , 1 idée , nous en parler !</h3>
 
 <form action="" method="post">
     <label>Nom</label> <br>
@@ -38,7 +37,7 @@
     <textarea name="msg" placeholder="message" value=""></textarea> <br>
 
     <button class="form-submit" name="submit">
-        <img src="../wp-content/img/send.svg" alt="pictogramme de lettre">
+        <img src="<?php echo(get_template_directory_uri()) ?>/img/send.svg" alt="pictogramme de lettre">
         Envoyer
     </button>
 </form>

@@ -9,12 +9,7 @@
     
   </a>
   <div class="nav-align">
-    <div class="nav-entry">
-      <a href="#">A propos</a>
-      <a href="#">Nos services</a>
-      <a href="#">Témoignages</a>
-      <a href="#">Contact</a>
-    </div>
+    <?php wp_nav_menu(array('menu' => 'nav')); ?>
     <div class="nav-social">
       <a href="">
           <img class="logo-social" src="<?php echo(get_template_directory_uri()) ?>/img/logo-instagram.svg" alt="logo d'instagram">

@@ -1,4 +1,9 @@
-<?php get_header() ?>
+<?php 
+  get_header();
+
+  //var
+  $title = get_field('title');
+?>
 
 
 <div class="title-poivron">

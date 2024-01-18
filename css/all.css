@@ -46,3 +46,12 @@
     width: 25px;
     height: auto;
 }
+
+/*nav-links*/
+.nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    font-family: "DINPro";
+    font-size: 24px;
+}

@@ -1,5 +1,5 @@
 <?php
-    p($args);
+    //p($args);
    
 ?>
 
@@ -8,7 +8,9 @@
     <div class="small-bloc-content">
         <div class="small-bloc-content-line1">
             <h4><?php echo($args['name']) ?></h4>
-            <p><?php echo($args['date']) ?></p>
+            <?php if(isset($args['date'])): ?>
+                <p><?php echo($args['date']) ?></p>
+            <?php endif ?>
         </div>
         <p><?php echo($args['text']) ?></p>
         <?php if ($args['activate'] == true): ?>
