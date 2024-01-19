@@ -4,17 +4,16 @@
   get_header();
 
   //var
-  $title = get_the_title();
-
   $categories = get_field('cat');
   //d($categories);
 ?>
 
-
-<div class="title-poivron">
-    <h2 class="title-poivron-title"> <?php echo($title) ?> </h2>
-    <img class="title-poivron-img" src="<?php echo(get_template_directory_uri()) ?>/img/double-poivron.svg" alt="pictogramme d'un poivron">
-</div>
+<?php
+    $content = [
+        'title' => get_the_title()
+    ];
+    get_template_part('layouts/title','poivron', $content);
+?>
 
 <div class="wrapXL grid-big-bloc">
     <?php 
@@ -30,7 +29,6 @@
 
             get_template_part('layouts/big','bloc', $content);
         }
-        d($cat['link']);
     ?>
 </div>
 

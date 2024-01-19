@@ -1,1 +1,1 @@
-<h2 class="title-outline"><?php echo($content['title']) ?></h2>
+<h2 class="title-outline"><?php echo($args['title']) ?></h2>

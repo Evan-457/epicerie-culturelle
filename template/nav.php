@@ -4,7 +4,7 @@
         x
     </div>
     <div>
-        Close
+        Fermer
     </div>
     
   </a>

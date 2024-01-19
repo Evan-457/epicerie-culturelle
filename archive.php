@@ -4,11 +4,10 @@
     get_header();
 
     //var
-    $title = get_the_title();
 ?>
 
 <div class="title-poivron">
-    <h2 class="title-poivron-title"> <?php echo($title) ?> </h2>
+    <h2 class="title-poivron-title"> <?php echo(post_type_archive_title()) ?> </h2>
     <img class="title-poivron-img" src="<?php echo(get_template_directory_uri()) ?>/img/double-poivron.svg" alt="pictogramme d'un poivron">
 </div>
 
@@ -27,7 +26,6 @@
     ];
     get_template_part('layouts/small','bloc', $content);
     
-
     endwhile;  ?>
 </div>
 <?php

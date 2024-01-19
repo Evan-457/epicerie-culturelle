@@ -4,11 +4,12 @@
     get_header();
 
     //var
-    $title = get_field('Title');
+    $title = get_the_title();
     $img = get_field('img');
     $text1 = get_field('text1');
     $text2 = get_field('text2');
     $works = get_field('works');
+    $link = get_field('link');
 ?>
 
 <div class="title-poivron">
@@ -23,11 +24,16 @@
             <?php echo($text1) ?>
         </p>
     </div>
-    <p class="content-line2">
-        <?php echo($text2) ?>
-    </p>
+    <div class="content-line2">
+        <p><?php echo($text2) ?></p>
+    </div>
+    <?php if((!empty($link))): ?>
+        <div>
+            <iframe class="wrapL youtube" src="https://www.youtube-nocookie.com/embed/<?php echo($link) ?>" frameborder="0"></iframe>
+        </div>
+    <?php endif ?>
 </div>
-<?php if(isset($works)): ?>
+<?php if((!empty($works) )): ?>
     <div class=" wrapXL grid-small-bloc">
         <?php
             //import layouts

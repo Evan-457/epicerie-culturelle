@@ -48,7 +48,7 @@
         ?>
     </div>
     <div class="center-items">
-        <a class="see-more" href="">Voir plus</a>
+        <a class="see-more" href="<?php echo(get_post_type_archive_link('news')) ?>">Voir plus</a>
     </div>
 </div>
 

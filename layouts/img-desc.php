@@ -4,10 +4,10 @@
 
 <div class="img-desc wrapL">
     <div class="img-desc-img">
-    <img src="<?php echo($content['img']['sizes']['img-desc']); ?>" height="<?php echo($content['img']['sizes']['img-desc-height']); ?>" width="<?php echo($content['img']['sizes']['img-desc-width']); ?>" alt="<?php echo($content['img']['alt']); ?>">
+    <iframe class="wrapL last-podcast" src="https://www.youtube-nocookie.com/embed/<?php echo($link) ?>" frameborder="0"></iframe>
     </div>
     <div class="img-desc-content">
-        <h4 class="img-desc-title"><?php echo($content['title']) ?></h4>
-        <p class="img-desc-text"<?php echo($content['text']) ?>> </p>
+        <p class="img-desc-title"><?php echo($args['date']) ?></p>
+        <div class="img-desc-text"> <?php echo($args['text']) ?> </div>
     </div>
 </div>
