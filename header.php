@@ -8,10 +8,12 @@
     <?php wp_head() ?>
 </head>
 
-<body>
+<body <?php body_class(); ?>>
 
     <header>
-        <img class="logo" src="<?php echo(get_template_directory_uri()) ?>/img/logo-b.svg" alt="logo de l'épicerie culturelle">
+        <a class="center-items" href="<?php echo(get_home_url()); ?>">
+            <img class="logo" src="<?php echo(get_template_directory_uri()) ?>/img/logo-b.svg" alt="logo de l'épicerie culturelle">
+        </a>
     </header>
 
     <?php 

@@ -3,10 +3,14 @@ var closeBtn = document.querySelector(".closeBtn");
 var openBtn = document.querySelector(".openBtn");
 
 openBtn.addEventListener("click", (event) => {
+    event.stopPropagation();
+    event.preventDefault();
     openNav();
 });
 
 closeBtn.addEventListener("click", (event) => {
+    event.stopPropagation();
+    event.preventDefault();
     closeNav();
 });
 
