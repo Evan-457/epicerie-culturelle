@@ -19,13 +19,13 @@
 <div class="wrapL">
     <div class="content-line1">
         <img src="<?php echo($img['sizes']['content-img']); ?>" alt="<?php echo($img['alt']) ?>" height="<?php echo($img['sizes']['content-img-height']) ?>" width="<?php echo($img['sizes']['content-img-width']) ?>" loading="lazy">
-        <p>
+        <div>
             <?php echo($text1) ?>
-        </p>
+        </div>
     </div>
-    <p class="content-line2">
+    <div class="content-line2">
         <?php echo($text2) ?>
-    </p>
+</div>
 </div>
 <?php if(isset($works)): ?>
     <div class=" wrapXL grid-small-bloc">
