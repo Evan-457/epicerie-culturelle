@@ -3,6 +3,8 @@
     get_header();
 
     //var
+    //slogan
+    $slogan = get_field('slogan');
     //citation
     $quotes = get_field('quotes');
     $rand_quote_i = array_rand($quotes,1);
@@ -14,7 +16,7 @@
     
 ?>
 
-<h1 class="home-slogan">L'art nous fait du bien</h1>
+<h1 class="home-slogan"><?php echo($title_part) ?></h1>
 
 <?php
     //citation aléatoire
