@@ -16,7 +16,7 @@
     
 ?>
 
-<h1 class="home-slogan"><?php echo($title_part) ?></h1>
+<h1 class="home-slogan"><?php echo($slogan) ?></h1>
 
 <?php
     //citation aléatoire
