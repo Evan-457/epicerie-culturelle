@@ -10,7 +10,7 @@
 
 <div class="title-poivron">
     <h2 class="title-poivron-title"> <?php echo($title) ?> </h2>
-    <img class="title-poivron-img" src="<?php echo(get_template_directory_uri()) ?>/img/double-poivron.svg" alt="pictogramme d'un poivron">
+    <img class="title-poivron-img" src="<?php echo(get_template_directory_uri()) ?>/img/double-poivron-title.svg" alt="pictogramme d'un poivron">
 </div>
 
 <div class="wrapXL center-items grid-small-bloc">

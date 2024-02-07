@@ -13,13 +13,13 @@
             <div class="footer-center">
                 <p class="footer-title">Nos réseaux sociaux</p>
                 <div class="footer-social">
-                    <a href="">
+                    <a href="https://www.instagram.com/lepicerie_culturelle/?hl=fr" target="_blank">
                         <img class="logo-social" src="<?php echo(get_template_directory_uri()) ?>/img/logo-instagram.svg" alt="logo d'instagram">
                     </a>
-                    <a href="">
+                    <a href="https://www.facebook.com/people/L%C3%A9picerie-culturelle-du-territoire/100065404246328/" target="_blank">
                         <img class="logo-social" src="<?php echo(get_template_directory_uri()) ?>/img/logo-facebook.svg" alt="logo de facebook">
                     </a>
-                    <a href="">
+                    <a href="https://www.youtube.com/@lepicerieculturelleduterritoir" target="_blank">
                         <img class="logo-social" src="<?php echo(get_template_directory_uri()) ?>/img/logo-youtube.svg" alt="logo de YouTube">
                     </a>
                 </div>
@@ -28,9 +28,9 @@
             <div class="footer-right">
                 <p class="footer-title">Contactez-nous !</p>
                 <div>
-                    <p>mail</p>
-                    <p>tel</p>
-                    <a href="">Mention légales</a>
+                    <p>mail : lepicerieculturelle73@gmail.com</p>
+                    <p>tel : 06 80 50 85 12</p>
+                    <a href="<?php echo(get_the_permalink(295)); ?>">Mention légales</a>
                 </div>
             </div>
 

@@ -15,18 +15,18 @@
     font-size: 1rem;
     position: relative;
     height: 100%;
+    color: white;
 }
 .footer-color::after {
     content: "";
-    background-image: url(../img/poivron.svg);
+    background-image: url(../img/poivron-footer.svg);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 501px;
-    height: 595px;
+    width: 500px;
+    height: 500px;
     position: absolute;
     right: 10%;
-    bottom: 45%;
-    transform: rotate(35deg);
+    bottom: 80%;
     fill: #659899;
     opacity: 17%;
     z-index: -1;
@@ -48,6 +48,9 @@
 }
 .footer-center {
     text-align: center;
+}
+.footer-center .logo-social {
+    filter: invert(1);
 }
 .footer-social {
     display: flex;
@@ -81,8 +84,8 @@
 
     .footer-color::after {
         width: 250px;
-        height: 300px;
+        height: 250px;
         right: 10%;
-        bottom: 80%;
+        bottom: 90%;
     }
 }

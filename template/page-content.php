@@ -9,11 +9,12 @@
     $text1 = get_field('text1');
     $text2 = get_field('text2');
     $works = get_field('works');
+    $link = get_field('link');
 ?>
 
-<div class="wrapL title-poivron">
+<div class="wrapXL title-poivron">
     <h2 class="title-poivron-title"> <?php echo($title) ?> </h2>
-    <img class="title-poivron-img" src="<?php echo(get_template_directory_uri()) ?>/img/double-poivron.svg" alt="pictogramme d'un poivron">
+    <img class="title-poivron-img" src="<?php echo(get_template_directory_uri()) ?>/img/double-poivron-title.svg" alt="pictogramme d'un poivron">
 </div>
 
 <div class="wrapL">
@@ -24,10 +25,15 @@
         </div>
     </div>
     <div class="content-line2">
-        <?php echo($text2) ?>
+        <p><?php echo($text2) ?></p>
+    </div>
+    <?php if((!empty($link))): ?>
+        <div>
+            <iframe class="wrapL center-items youtube" src="https://www.youtube-nocookie.com/embed/<?php echo($link) ?>" frameborder="0"></iframe>
+        </div>
+    <?php endif ?>
 </div>
-</div>
-<?php if(isset($works)): ?>
+<?php if((!empty($works) )): ?>
     <div class=" wrapXL grid-small-bloc">
         <?php
             //import layouts
