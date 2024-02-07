@@ -1,11 +1,11 @@
 /*all*/
 .wrapXL {
-    max-width: 1328px;
+    max-width: 90%;
     margin: auto auto;
 }
 
 .wrapL {
-    max-width: 1104px;
+    max-width: 80%;
     margin: auto auto;
 }
 
@@ -27,12 +27,20 @@
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 16px;
     grid-row-gap: 30px;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-content: space-evenly;
+    align-items: center;
 }
 .grid-big-bloc {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 16px;
     grid-row-gap: 30px;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-content: space-evenly;
+    align-items: center;
 }
 
 /*button*/
@@ -53,8 +61,27 @@
     align-items: center;
     gap: 18px;
 }
-
 .logo-social {
     width: 25px;
     height: auto;
+}
+
+/*RESPONSIVE*/
+@media only screen and (max-width: 1080px) {
+    .grid-big-bloc {
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+    }
+}
+@media only screen and (max-width: 1080px) {
+    .grid-small-bloc {
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+    }
+}
+@media only screen and (max-width: 940px) {
+    .grid-small-bloc {
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+    }
 }

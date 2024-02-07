@@ -1,11 +1,12 @@
 .big-bloc {
-    width: 600px;
-    height: 600px;
+    width: 650px;
+    height: 650px;
     display: flex;
     padding: 25px;
     justify-content: center;
     align-items: center;
     background: #E5F3F6;
+    align-self: center;
 
 }
 .big-bloc-content {
@@ -17,15 +18,51 @@
 }
 .big-bloc-cat {
     font-family: "DINPro-CondensedMedium";
-    font-size: 20px;
+    font-size: 1.5rem;
     text-transform: uppercase;
 }
 .big-bloc-title {
     font-family: "DINPro-CondensedMedium";
-    font-size: 100px;   
+    font-size: 6.25rem;   
     text-transform: uppercase; 
 }
 .big-bloc-desc {
     font-family: "DINPro";
-    font-size: 17px;
+    font-size: 1rem;
+}
+
+@media only screen and (max-width: 1440px) {
+    .big-bloc {
+        width: 450px;
+        height: 450px;    
+    }
+    .big-bloc-title {
+        font-size: 5rem;    
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .big-bloc-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 25px;
+    }
+    .big-bloc {
+        width: 300px;
+        height: 300px;    
+    }
+    .big-bloc-cat {
+        font-family: "DINPro-CondensedMedium";
+        font-size: 1rem;
+        text-transform: uppercase;
+    }
+    .big-bloc-title {
+        font-size: 4rem;    
+    }
+    .big-bloc-desc {
+        font-family: "DINPro";
+        font-size: 0.8rem;
+    }
 }

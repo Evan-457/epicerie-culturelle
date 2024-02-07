@@ -7,7 +7,7 @@
     transition: all 0.5s ease;
     text-decoration: none;
     font-family: "DINPro-CondensedLight";
-    font-size: 20px;
+    font-size: 1.25rem;
     transition: all 0.5s ease;
 }
 .plus-button img {
@@ -33,4 +33,14 @@
 .plus-button:hover p {
     display: contents;
     color: white;
+}
+
+@media only screen and (max-width: 500px) {
+    .plus-button {
+        font-size: 0.8rem;
+    }
+    .plus-button img {
+        width: 16px;
+        height: 16px;
+    }
 }

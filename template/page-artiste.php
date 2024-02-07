@@ -15,7 +15,7 @@
     get_template_part('layouts/title','poivron', $content);
 ?>
 
-<div class="wrapXL grid-big-bloc">
+<div class="wrapXL center-items grid-big-bloc">
     <?php 
         foreach ($categories as $cat) {
             //récupérer nom de la catégorie

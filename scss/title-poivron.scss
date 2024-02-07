@@ -7,10 +7,66 @@
 }
 .title-poivron-title {
     font-family: "DINPro-CondensedMedium";
-    font-size: 200px;
+    font-size: 12rem;
     text-transform: uppercase;
 }
 .title-poivron-img {
     height: 100px;
     width: auto;
+}
+
+@media only screen and (max-width: 1440px) {
+    .title-poivron {
+        gap: 80px;
+    }
+    .title-poivron-title {
+        font-size: 10rem;
+    }
+    .title-poivron-img {
+        height: 90px;
+    }
+}
+@media only screen and (max-width: 1080px) {
+    .title-poivron {
+        gap: 70px;
+    }
+    .title-poivron-title {
+        font-size: 8rem;
+    }
+    .title-poivron-img {
+        height: 80px;
+    }
+}
+@media only screen and (max-width: 860px) {
+    .title-poivron {
+        gap: 60px;
+    }
+    .title-poivron-title {
+        font-size: 7rem;
+    }
+    .title-poivron-img {
+        height: 70px;
+    }
+}
+@media only screen and (max-width: 640px) {
+    .title-poivron {
+        gap: 50px;
+    }
+    .title-poivron-title {
+        font-size: 6rem;
+    }
+    .title-poivron-img {
+        height: 60px;
+    }
+}
+@media only screen and (max-width: 480px) {
+    .title-poivron {
+        gap: 40px;
+    }
+    .title-poivron-title {
+        font-size: 5rem;
+    }
+    .title-poivron-img {
+        height: 50px;
+    }
 }

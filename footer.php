@@ -4,10 +4,12 @@
     </div>
 
     <div class="footer-color">
-        <div class="footer-align">
+        <div class="wrapL footer-align">
+
             <div class="footer-left">
                 <p>L’art et la culture en Pays de Savoie</p>
             </div>
+
             <div class="footer-center">
                 <p class="footer-title">Nos réseaux sociaux</p>
                 <div class="footer-social">
@@ -22,6 +24,7 @@
                     </a>
                 </div>
             </div>
+
             <div class="footer-right">
                 <p class="footer-title">Contactez-nous !</p>
                 <div>
@@ -30,6 +33,7 @@
                     <a href="">Mention légales</a>
                 </div>
             </div>
+
         </div>
     </div>
 </footer>

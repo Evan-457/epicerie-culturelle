@@ -16,7 +16,7 @@
     flex-direction: column;
     gap: 16px;
     font-family: "DINPro";
-    font-size: 17px;
+    font-size: 1rem;
 }
 .small-bloc-content-line1 {
     width: 100%;
@@ -26,9 +26,18 @@
 }
 .small-bloc-content-line1-name {
     font-family: "DINPro-Medium";
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 .small-bloc-content-line1-date {
     font-family: "DINPro-CondensedMediumItalic";
-    font-size: 24px;
+    font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 500px) {
+    .small-bloc {
+        width: 350px;
+    }
+    .small-bloc img {
+        height: 350px;
+    }
 }

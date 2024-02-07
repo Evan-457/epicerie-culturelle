@@ -1,7 +1,33 @@
 .home-slogan {
     font-family: "DINPro-CondensedMedium";
-    font-size: 170px;
+    font-size: 12rem;
     text-align: center;
     padding: 130px 0;
     text-transform: uppercase;
+}
+
+@media only screen and (max-width: 1440px) {
+    .home-slogan {
+        font-size: 10rem;
+    }
+}
+@media only screen and (max-width: 1080px) {
+    .home-slogan {
+        font-size: 8rem;
+    }
+}
+@media only screen and (max-width: 860px) {
+    .home-slogan {
+        font-size: 7rem;
+    }
+}
+@media only screen and (max-width: 640px) {
+    .home-slogan {
+        font-size: 6rem;
+    }
+}
+@media only screen and (max-width: 480px) {
+    .home-slogan {
+        font-size: 5rem;
+    }
 }

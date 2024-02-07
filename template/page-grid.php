@@ -13,7 +13,7 @@
     <img class="title-poivron-img" src="<?php echo(get_template_directory_uri()) ?>/img/double-poivron.svg" alt="pictogramme d'un poivron">
 </div>
 
-<div class="wrapXL grid-small-bloc">
+<div class="wrapXL center-items grid-small-bloc">
     <?php
         $pages = get_pages(['child_of' => $post->ID]);
 

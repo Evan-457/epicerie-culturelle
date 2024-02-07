@@ -11,8 +11,8 @@
 
 <body <?php body_class(); ?>>
 
-    <header>
-        <a class="center-items" href="<?php echo(get_home_url()); ?>">
+    <header class="center-items">
+        <a href="<?php echo(get_home_url()); ?>">
             <img class="logo" src="<?php echo(get_template_directory_uri()) ?>/img/logo-b.svg" alt="logo de l'épicerie culturelle">
         </a>
     </header>

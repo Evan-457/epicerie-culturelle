@@ -1,10 +1,18 @@
 header {
     padding-top: 50px;
     display: flex;
+    justify-content: center;
 }
 
 .logo {
     height: 130px;
     width: auto;
-    margin: auto auto;
+}
+
+@media only screen and (max-width: 640px) {
+    .logo {
+        height: 100px;
+        width: auto;
+        margin: auto auto;
+    }
 }

@@ -3,7 +3,7 @@
 ?>
 
 <div class="quote">
-    <div class="wrapL">
+    <div class="quote-content">
         <div class="quote-left">
             <p class="quote-text"><?php echo($args['text']); ?></p>
             <p class="quote-name"><?php echo($args['name']); ?></p>

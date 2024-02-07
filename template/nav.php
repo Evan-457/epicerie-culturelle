@@ -3,11 +3,11 @@
     <div class="cross">
         x
     </div>
-    <div>
-        Fermer
-    </div>
-    
+    <p>
+      Fermer
+    </p>
   </a>
+
   <div class="nav-align">
     <?php wp_nav_menu(array('menu' => 'nav')); ?>
     <div class="nav-social">
@@ -31,6 +31,6 @@
         <span></span>
         <span></span>
     </div>
-    Menu
+    <p>Menu</p>
     </a>
 </div>

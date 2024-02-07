@@ -11,7 +11,7 @@
     $works = get_field('works');
 ?>
 
-<div class="wrapXL title-poivron">
+<div class="wrapL title-poivron">
     <h2 class="title-poivron-title"> <?php echo($title) ?> </h2>
     <img class="title-poivron-img" src="<?php echo(get_template_directory_uri()) ?>/img/double-poivron.svg" alt="pictogramme d'un poivron">
 </div>

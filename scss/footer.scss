@@ -12,8 +12,9 @@
     height: auto;
     background: #659899;
     font-family: "DINPro";
-    font-size: 17px;
+    font-size: 1rem;
     position: relative;
+    height: 100%;
 }
 .footer-color::after {
     content: "";
@@ -23,8 +24,8 @@
     width: 501px;
     height: 595px;
     position: absolute;
-    left: 54%;
-    top: -163%;
+    right: 10%;
+    bottom: 45%;
     transform: rotate(35deg);
     fill: #659899;
     opacity: 17%;
@@ -32,16 +33,14 @@
 }
 
 .footer-align {
-    max-width: 1104px;
-    margin: auto auto;
     display: flex;
     justify-content: space-between;
     padding: 50px 0 90px 0;
 }
 .footer-title {
     font-family: "DINPro-CondensedBold";
-    font-size: 20px;
-    padding-bottom: 30px;
+    font-size: 1.25rem;
+    padding-bottom: 20px;
 }
 .footer-left {
     text-align: left;
@@ -63,4 +62,27 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
+}
+
+/*RESPONSIVE*/
+@media only screen and (max-width: 768px) {
+    .footer-align {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 50px;
+    }
+    .footer-left {
+        width: 100%;
+    }
+    .footer-left, .footer-center, .footer-right {
+        text-align: center;
+    }
+
+    .footer-color::after {
+        width: 250px;
+        height: 300px;
+        right: 10%;
+        bottom: 80%;
+    }
 }
