@@ -6,7 +6,6 @@
     $title = get_the_title();
 
     if (isset($_POST['submit']) && $_POST['lastname'] !== '' && $_POST['firstname'] !== '' && $_POST['mail'] !== '' && $_POST['subject'] !== '' && $_POST['message'] !== '') {
-        var_dump($_POST);
         $to = "evan.piera@etu.univ-smb.fr";
         $subject = 'nouvelle demande de '.$_POST['firstname'].''.$_POST['lastname'];
         $headers = $_POST['mail'];

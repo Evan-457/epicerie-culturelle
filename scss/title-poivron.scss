@@ -9,6 +9,7 @@
     font-family: "DINPro-CondensedMedium";
     font-size: 10rem;
     text-transform: uppercase;
+    width: fit-content;
 }
 .title-poivron-img {
     height: 100px;
@@ -17,7 +18,7 @@
 
 @media only screen and (max-width: 1440px) {
     .title-poivron {
-        gap: 80px;
+        gap: 70px;
     }
     .title-poivron-title {
         font-size: 10rem;
@@ -28,7 +29,7 @@
 }
 @media only screen and (max-width: 1080px) {
     .title-poivron {
-        gap: 70px;
+        gap: 60px;
     }
     .title-poivron-title {
         font-size: 8rem;
@@ -39,7 +40,7 @@
 }
 @media only screen and (max-width: 860px) {
     .title-poivron {
-        gap: 60px;
+        gap: 50px;
     }
     .title-poivron-title {
         font-size: 7rem;
@@ -50,10 +51,10 @@
 }
 @media only screen and (max-width: 640px) {
     .title-poivron {
-        gap: 50px;
+        gap: 40px;
     }
     .title-poivron-title {
-        font-size: 6rem;
+        font-size: 5.5rem;
     }
     .title-poivron-img {
         height: 60px;
@@ -61,12 +62,26 @@
 }
 @media only screen and (max-width: 480px) {
     .title-poivron {
-        gap: 40px;
+        gap: 30px;
     }
     .title-poivron-title {
         font-size: 5rem;
+        width: fit-content;
     }
     .title-poivron-img {
         height: 50px;
     }
 }
+@media only screen and (max-width: 420px) {
+    .title-poivron {
+        gap: 20px;
+    }
+    .title-poivron-title {
+        font-size: 4.5rem;
+        width: fit-content;
+    }
+    .title-poivron-img {
+        height: 50px;
+    }
+}
+

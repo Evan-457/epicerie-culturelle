@@ -4,11 +4,13 @@
     text-align: center;
     padding: 130px 0;
     text-transform: uppercase;
+    max-width: 95%;
+    margin: auto auto;
 }
 
 @media only screen and (max-width: 1440px) {
     .home-slogan {
-        font-size: 10rem;
+        font-size: 9rem;
     }
 }
 @media only screen and (max-width: 1080px) {
@@ -29,5 +31,10 @@
 @media only screen and (max-width: 480px) {
     .home-slogan {
         font-size: 5rem;
+    }
+}
+@media only screen and (max-width: 420px) {
+    .home-slogan {
+        font-size: 4.5rem;
     }
 }
