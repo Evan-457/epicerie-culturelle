@@ -41,12 +41,15 @@
     font-family: "DINPro-CondensedBold";
     font-size: 1.25rem;
     padding-bottom: 20px;
+    text-transform: uppercase;
 }
 .footer-left {
     text-align: left;
-    width: 200px;
+    width: 30%;
+
 }
 .footer-center {
+    width: 30%;
     text-align: center;
 }
 .footer-center .logo-social {
@@ -59,12 +62,21 @@
     gap: 24px;
 }
 .footer-right {
+    width: 30%;
     text-align: right;
 }
 .footer-right div {
     display: flex;
     flex-direction: column;
+
     gap: 10px;
+}
+.footer-right a {
+    color: white;
+    width: auto;
+}
+.footer-right a:hover {
+    color: black;
 }
 
 /*RESPONSIVE*/
@@ -75,13 +87,12 @@
         flex-direction: column;
         gap: 50px;
     }
-    .footer-left {
-        width: 100%;
-    }
-    .footer-left, .footer-center, .footer-right {
-        text-align: center;
-    }
 
+    .footer-left, .footer-center, .footer-right {
+        width: 100%;
+        text-align: center;
+
+    }
     .footer-color::after {
         width: 250px;
         height: 250px;

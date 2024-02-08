@@ -23,7 +23,8 @@
     $content = [
             'text' => $quotes[$rand_quote_i]['text'],
             'name' => $quotes[$rand_quote_i]['name'],
-            'img' => $quotes[$rand_quote_i]['img']
+            'img' => $quotes[$rand_quote_i]['img'],
+            'legend' => $quotes[$rand_quote_i]['legend']
         ];
     get_template_part('layouts/citation','', $content);
 ?>
@@ -62,6 +63,7 @@
     <?php
         foreach($months as $month) {
             $content = [
+                'color' => get_field('color', $month->ID),
                 'surtitle' => get_the_title($month->ID),
                 'name' => get_field('name', $month->ID),
                 'text' => get_field('text1', $month->ID),

@@ -30,7 +30,7 @@
                 <div>
                     <p>mail : lepicerieculturelle73@gmail.com</p>
                     <p>tel : 06 80 50 85 12</p>
-                    <a href="<?php echo(get_the_permalink(295)); ?>">Mention légales</a>
+                    <p><a href="<?php echo(get_the_permalink(295)); ?>">Mention légales</a></p>
                 </div>
             </div>
 

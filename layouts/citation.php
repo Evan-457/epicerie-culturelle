@@ -7,6 +7,7 @@
         <div class="quote-left">
             <p class="quote-text"><?php echo($args['text']); ?></p>
             <p class="quote-name"><?php echo($args['name']); ?></p>
+            <p class="quote-legend"><?php echo($args['legend']); ?></p>
         </div>
         <div class="quote-right">
             

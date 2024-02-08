@@ -5,13 +5,14 @@
 
     $title = get_the_title();
 
-    if (isset($_POST['submit']) && $_POST['firstname'] !== '') {
+    if (isset($_POST['submit']) && $_POST['lastname'] !== '' && $_POST['firstname'] !== '' && $_POST['mail'] !== '' && $_POST['subject'] !== '' && $_POST['message'] !== '') {
         var_dump($_POST);
-        //$to = ;
+        $to = "evan.piera@etu.univ-smb.fr";
         $subject = 'nouvelle demande de '.$_POST['firstname'].''.$_POST['lastname'];
-        //$message = ;
+        $headers = $_POST['mail'];
+        $message = $_POST['message'];
 
-        wp_mail( $to, $subject, $message, $headers, $attachments );
+        wp_mail($to, $subject, $message, $headers);
     }
 ?>
 

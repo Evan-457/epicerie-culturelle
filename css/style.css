@@ -90,8 +90,8 @@ body::after {
   background-image: url(../img/montagne-right.svg);
   background-repeat: no-repeat;
   background-size: cover;
-  width: 500px;
-  height: 1000px;
+  width: 652px;
+  height: 984px;
   position: absolute;
   right: 0;
   top: 30%;
@@ -557,15 +557,22 @@ textarea {
 
 .quote-text {
   font-family: "DINPro";
-  font-size: 32px;
+  font-size: 2rem;
   font-weight: 300;
 }
 
 .quote-name {
   font-family: "DINPro-Medium";
-  font-size: 20px;
+  font-size: 1rem;
   font-weight: 400;
-  padding-top: 5px;
+  padding-top: 10px;
+}
+
+.quote-legend {
+  font-family: "DINPro";
+  font-size: 0.8rem;
+  font-weight: 300;
+  padding-top: 20px;
 }
 
 @media only screen and (max-width: 1080px) {
@@ -929,14 +936,16 @@ textarea {
   font-family: "DINPro-CondensedBold";
   font-size: 1.25rem;
   padding-bottom: 20px;
+  text-transform: uppercase;
 }
 
 .footer-left {
   text-align: left;
-  width: 200px;
+  width: 30%;
 }
 
 .footer-center {
+  width: 30%;
   text-align: center;
 }
 
@@ -952,6 +961,7 @@ textarea {
 }
 
 .footer-right {
+  width: 30%;
   text-align: right;
 }
 
@@ -959,6 +969,15 @@ textarea {
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+
+.footer-right a {
+  color: white;
+  width: auto;
+}
+
+.footer-right a:hover {
+  color: black;
 }
 
 /*RESPONSIVE*/
@@ -969,10 +988,8 @@ textarea {
     flex-direction: column;
     gap: 50px;
   }
-  .footer-left {
-    width: 100%;
-  }
   .footer-left, .footer-center, .footer-right {
+    width: 100%;
     text-align: center;
   }
   .footer-color::after {

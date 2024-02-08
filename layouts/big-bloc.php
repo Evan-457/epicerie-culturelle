@@ -2,7 +2,7 @@
     //p($content);
 ?>
 
-<div class="big-bloc">
+<div class="big-bloc" <?php if(isset($args["color"])):?>style="background:<?php echo($args['color']) ?>" <?php endif ?>>
     <div class="big-bloc-content">
         <p class="big-bloc-cat"><?php echo($args['surtitle']) ?></p>
         <p class="big-bloc-title"><?php echo($args['name']) ?></p>

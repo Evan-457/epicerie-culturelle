@@ -21,6 +21,7 @@
             //récupérer nom de la catégorie
             $post_type = get_post_type_object($cat['link']);
             $content = [
+                'color' => $cat['color'],
                 'surtitle' => $cat['surtitle'],
                 'name' => $post_type->label,
                 'text' => $cat['text'],
